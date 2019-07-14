@@ -1,0 +1,7 @@
+/root/springboot-crud-demo/src/main/java/com/ensat/repositories/ProductRepository.java
+/root/springboot-crud-demo/src/main/java/com/ensat/services/ProductServiceImpl.java
+/root/springboot-crud-demo/src/main/java/com/ensat/SpringBootWebApplication.java
+/root/springboot-crud-demo/src/main/java/com/ensat/entities/Product.java
+/root/springboot-crud-demo/src/main/java/com/ensat/controllers/IndexController.java
+/root/springboot-crud-demo/src/main/java/com/ensat/controllers/ProductController.java
+/root/springboot-crud-demo/src/main/java/com/ensat/services/ProductService.java
