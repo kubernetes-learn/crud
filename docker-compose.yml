@@ -1,12 +1,5 @@
 version: "2"
 services:
-  app:
-    image: rishabh050189/springcrud:14
-    ports:
-      - 8080:8080
-    depends_on:
-      - db
-
   db:
     image: mysql:5.7
     command: --default-authentication-plugin=mysql_native_password
@@ -18,4 +11,12 @@ services:
       - MYSQL_DATABASE=springbootdb
     volumes:
       - ./mounts/db_data:/var/lib/mysql/data
+  app:
+    image: rishabh050189/springcrud:14
+    ports:
+      - 8080:8080
+    depends_on:
+      - db
+
+
 
