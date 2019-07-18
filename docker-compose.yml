@@ -10,13 +10,12 @@ services:
       - MYSQL_ROOT_PASSWORD=password
       - MYSQL_DATABASE=springbootdb
     volumes:
-      - ./mounts/db_data:/var/lib/mysql/data
+      - ./mounts/db_data:/var/lib/mysql
   app:
     image: rishabh050189/springcrud:14
+    restart: always
+    command: bash -c "sleep 15"
     ports:
       - 8080:8080
     depends_on:
       - db
-
-
-
